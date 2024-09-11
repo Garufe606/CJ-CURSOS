@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo do body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 195vh;
+    background: linear-gradient(135deg, red, #000, #333);
+}
+
+/* Estilo do container */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Estilo do conteúdo */
+.content h1 {
+    font-size: 5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Estilo para links dentro do texto */
+.content p a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content p a:hover {
+    text-decoration: underline;
+}

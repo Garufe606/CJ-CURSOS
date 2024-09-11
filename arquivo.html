@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquivos</title>
+    <link rel="stylesheet" href="style9.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Arquivos</h1>
+            <p>
+                Criar e Escrever em um Arquivo
+                <img src="15.png" alt="">
+                Explicação:<br>
+Criar e Escrever em um Arquivo:<br>
+with open(nome_arquivo, 'w') as arquivo: abre um arquivo para escrita ('w'), criando-o se não existir ou sobrescrevendo-o se já existir.
+arquivo.write(conteudo) escreve o conteúdo no arquivo.
+O with garante que o arquivo seja fechado automaticamente após a operação.
+<br>
+<br>
+Ler um Arquivo
+<img src="16.png" alt="">
+Ler um Arquivo:<br>
+with open(nome_arquivo, 'r') as arquivo: abre um arquivo para leitura ('r').
+conteudo = arquivo.read() lê todo o conteúdo do arquivo.<br>
+O conteúdo é retornado e impresso.
+<br>
+<br>
+Atualizar um Arquivo
+<img src="17.png" alt="">
+Adicionar Conteúdo a um Arquivo:<br>
+with open(nome_arquivo, 'a') as arquivo: abre um arquivo para adicionar conteúdo ('a').
+arquivo.write(conteudo_adicional) adiciona o novo conteúdo ao final do arquivo.
+<br>
+<br>
+Apagar um Arquivo
+<img src="18.png" alt="">
+Explicação:<br>
+Importar o Módulo os:
+import os importa o módulo que fornece funções para interagir com o sistema operacional.<br>
+Função apagar_arquivo(nome_arquivo):
+os.remove(nome_arquivo) tenta remover o arquivo especificado pelo nome_arquivo.<br>
+Tratamento de Exceções:
+FileNotFoundError: Captura o erro se o arquivo não existir.<br>
+PermissionError: Captura o erro se o programa não tiver permissão para apagar o arquivo.<br>
+Exception as e: Captura outros erros e imprime a mensagem de erro correspondente.<br>
+Exemplo de Uso:<br>
+Define o nome do arquivo a ser apagado e chama a função apagar_arquivo().
+            </p>
+            <p>
+            
+            </p>
+        </div>
+    </div>
+    <a href="conteúdo.html" class="btn">Concluir</a>
+    <a href="Matrizes.html" class="btn">Voltar</a>
+</body>
+</html>

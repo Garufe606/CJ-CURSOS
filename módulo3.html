@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos de Busca</title>
+    <link rel="stylesheet" href="style10.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Algoritmos de Busca</h1>
+            <p>
+            BUSCA LINEAR<br>
+A busca linear percorre cada elemento da lista até encontrar o elemento desejado ou até que a lista termine.
+<img src="19.png" alt="">
+<br>
+<br>
+BUSCA BINÁRIA<br>
+A busca binária funciona em listas ordenadas, dividindo repetidamente a lista ao meio e comparando o elemento do meio com o elemento buscado.
+<img src="20.png" alt="">
+<br>
+<br>
+BUSCA EXPONENCIAL<BR>
+A busca exponencial começa verificando o primeiro elemento. Se o elemento não for o alvo, ele verifica as potências de 2 (ou seja, 2, 4, 8, 16, etc.) até encontrar um intervalo onde o elemento poderia estar. Depois, ela aplica a busca binária nesse intervalo.
+<img src="23.png" alt="">     
+Como o algoritmo funciona:<br>
+Busca inicial: O algoritmo começa verificando se o primeiro elemento da lista é o alvo. Se for, ele retorna imediatamente.
+
+Expansão exponencial: Ele continua verificando elementos em índices que são potências de 2 (i = 2, 4, 8, 16, etc.) até que o elemento verificado seja maior que o alvo ou até atingir o final da lista.
+
+Busca binária: Após encontrar o intervalo onde o elemento poderia estar, o algoritmo realiza uma busca binária nesse intervalo para localizar o elemento exato.    
+            </p>
+            <p>
+                
+            </p>
+        </div>
+    </div>
+    <a href="ordenações.html" class="btn">Próximo</a>
+    <a href="conteúdo.html" class="btn">Voltar</a>
+</body>
+</html>

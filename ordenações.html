@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos de Ordenação</title>
+    <link rel="stylesheet" href="style11.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Algoritmos de Ordenação</h1>
+            <p>
+            ORDENAÇÃO POR BOLHA<br>
+            A ordenação por bolha, conhecida como Bubble Sort, é um algoritmo de ordenação simples que percorre repetidamente a lista, comparando elementos adjacentes e trocando-os se estiverem na ordem errada. O processo se repete até que a lista esteja ordenada.
+<img src="21.png" alt="">
+Como o algoritmo funciona:
+Comparação de elementos adjacentes: Para cada elemento na lista, compare-o com o próximo. Se o elemento atual for maior que o próximo, eles são trocados.
+
+Repetição do processo: Após cada iteração, o maior elemento "flutua" para o fim da lista, como uma bolha em um copo d'água, por isso o nome Bubble Sort. A cada nova passagem pela lista, o número de elementos a serem verificados diminui, pois os maiores já estão em suas posições finais.
+
+Parada: O algoritmo continua passando pela lista até que nenhuma troca seja necessária, o que significa que a lista está ordenada.
+<br>
+<br>
+ORDENAÇÃO POR PERMUTAÇÃO<br>
+A ordenação por permutação, também conhecida como Ordenação por Trocas Mínimas ou Permutação Sort, é uma técnica que ordena uma lista testando todas as possíveis permutações da lista e selecionando a que estiver ordenada. Embora seja uma abordagem interessante do ponto de vista teórico, na prática, é extremamente ineficiente devido à sua complexidade O(n!).
+<img src="22.png" alt="">
+<br>Como funciona o código:<br>
+itertools.permutations(arr): Gera todas as permutações possíveis da lista arr.<br>
+
+esta_ordenado(arr): Uma função auxiliar que verifica se a lista está ordenada, retornando True se estiver.<br>
+
+permutacao_sort(arr): Percorre todas as permutações geradas. Se encontrar uma permutação que esteja ordenada, essa lista é retornada como a lista ordenada.<br>
+
+Limitações:<br>
+A complexidade do algoritmo é O(n!), o que o torna impraticável para listas grandes.
+É usado mais como uma curiosidade ou para fins educacionais, em vez de uma solução prática de ordenação.
+Esse algoritmo só é viável para listas pequenas, devido ao número explosivo de permutações que precisam ser geradas e verificadas.
+                
+            </p>
+            <p>
+                
+            </p>
+        </div>
+    </div>
+    <a href="conteúdo.html" class="btn">Concluir</a>
+    <a href="módulo3.html" class="btn">Voltar</a>
+</body>
+</html>
